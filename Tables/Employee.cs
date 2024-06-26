@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
+using Dapper;
 
 namespace crudDapper.Tables
 {
-    internal class Employee
+    public class Employee
     {
         public int Id { get; set; }
         public string Fullname { get; set; }
@@ -14,4 +17,6 @@ namespace crudDapper.Tables
         public decimal Salary { get; set; }
 
     }
+
+
 }
